@@ -71,6 +71,7 @@ services:
       - internal
   rabbitmq:
     image: rabbitmq:latest
+    container_name: rabbit
     hostname: "rabbit"
     volumes:
       - "./services/rabbit/data:/var/lib/rabbitmq"
