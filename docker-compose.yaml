@@ -69,6 +69,16 @@ services:
       - 9200:9200
     networks:
       - internal
+  rabbitmq:
+    image: rabbitmq:latest
+    hostname: "rabbit"
+    volumes:
+      - "./services/rabbit/data:/var/lib/rabbitmq"
+    ports:
+      - 15672:15672
+      - 5672:5672
+    networks:
+      - internal
   cerebro:
     image: yannart/cerebro:latest
     container_name: cerebro
