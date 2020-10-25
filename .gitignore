@@ -1,0 +1,5 @@
+services/rabbit/data
+.services/elasticsearch/logs
+services/elasticsearch/data
+services/elasticsearch/logs
+services/mysql/data
